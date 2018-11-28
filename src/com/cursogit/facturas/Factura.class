@@ -1,11 +1,19 @@
-class Factura () implements iFactura
+class Factura () implements IFactura{
    	public int num;
 	public float base;
 	public float tipoIva;
 	public Estados estado; 
     
     void cambiarEstado(Estados estado);
-	float getTotal();
-	float getCantidadIva();
+	float getTotal(){
+		//retornar algo para el capullo de Alvaro
+		return base+getCantidadIva();
+	};
+	float getCantidadIva(){
+	//la competencia de Alvaro es de M...
+		return tipoIva*base;
+	}
 
-)
+
+
+}
