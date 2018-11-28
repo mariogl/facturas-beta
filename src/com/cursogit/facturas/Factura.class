@@ -1,7 +1,11 @@
-class Factura (
+class Factura () implements iFactura
    	public int num;
 	public float base;
 	public float tipoIva;
 	public Estados estado; 
     
+    void cambiarEstado(Estados estado);
+	float getTotal();
+	float getCantidadIva();
+
 )
