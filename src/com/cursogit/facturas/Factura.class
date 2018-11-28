@@ -1,4 +1,4 @@
-class Factura () implements IFactura{
+private class Factura () implements IFactura{
    	public int num;
 	public float base;
 	public float tipoIva;
